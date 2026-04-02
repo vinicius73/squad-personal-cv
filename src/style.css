@@ -6,7 +6,14 @@ html {
   font-size: 16px;
 }
 
-body, html, h1, h2, h3, h4, h5, h6 {
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: Inter, sans-serif;
 }
 
@@ -16,7 +23,12 @@ body {
   background-color: #fcf9f8;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #1c1b1b;
 }
 
@@ -34,7 +46,8 @@ a {
   color: #121212;
 }
 
-a:active, a:hover {
+a:active,
+a:hover {
   color: var(--accent-color);
 }
 
@@ -42,28 +55,27 @@ a:active, a:hover {
   min-height: 100vh;
 }
 
-#page {
+.container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
 /* MENU */
 .page-menu {
+  background-color: #f6f3f2cc;
+  padding: 20px 40px;
+}
+
+.page-menu .container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
-}
-
-.page-menu {
-  background-color: #f6f3f2cc;
 }
 
 .page-menu__nav {
   display: flex;
   flex-direction: row;
-  
 }
 
 .page-menu__nav li {
@@ -72,10 +84,13 @@ a:active, a:hover {
 
 /* HEADER */
 .page-header {
+  padding: 80px 40px;
+}
+
+.page-header .container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 80px 40px;
   gap: 40px;
 }
 
@@ -91,7 +106,8 @@ a:active, a:hover {
   padding-bottom: 3rem;
   background: #f6f3f2;
 }
-.section-services i.bi, .section-services .section-services__title {
+.section-services i.bi,
+.section-services .section-services__title {
   color: var(--accent-color);
 }
 
@@ -108,7 +124,7 @@ a:active, a:hover {
 
 .section-services .section-services__block-title i.bi {
   display: block;
-  margin-bottom: 1em;  
+  margin-bottom: 1em;
 }
 
 .section-services .section-services__inner {
@@ -122,6 +138,10 @@ a:active, a:hover {
 }
 
 /* section-experience */
+
+.section-experience {
+  padding: 2rem 0;
+}
 
 .section-experience .section-experience__title {
   color: var(--accent-color);
@@ -164,7 +184,9 @@ a:active, a:hover {
   gap: 0.5rem;
 }
 
-.contact-hero, .contact-hero h2, .contact-hero h3 {
+.contact-hero,
+.contact-hero h2,
+.contact-hero h3 {
   color: #fff;
 }
 
@@ -175,7 +197,6 @@ a:active, a:hover {
 
 .contact-hero h3 {
   font-size: 4rem;
-
 }
 
 .contact-hero a {
@@ -225,26 +246,25 @@ a:active, a:hover {
   text-transform: uppercase;
 }
 
-
 @media screen and (min-width: 420px) {
   .page-header__left-column,
   .page-header__right-column {
     flex: 1;
-  } 
+  }
 }
 
 @media screen and (min-width: 421px) and (max-width: 1024px) {
   .page-header__left-column,
   .page-header__right-column {
     background: red;
-  } 
+  }
 }
 
 @media screen and (min-width: 1025px) {
   .page-header__left-column,
   .page-header__right-column {
     flex: 1;
-  } 
+  }
 }
 
 .page-header__links {
